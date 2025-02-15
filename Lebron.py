@@ -1,5 +1,6 @@
 import sys
 import copy
+import math
 
 class LaskerMorris:
     def __init__(self):
@@ -9,6 +10,50 @@ class LaskerMorris:
                                             "c5", "d1", "d2", "d3", "d5", "d6", "d7", "e3",
                                             "e4", "e5", "f2", "f4", "f6", "g1", "g4", "g6"]}
         self.turn = "blue"
+
+
+
+    def minimax(self, a, b):
+        value, move = self.max_value(self.board, a, b)
+        return move
+
+    def max_value(self, a, b, current_turn):
+        # check if game is in a terminal state, if it is then return the utility value
+        if self.is_terminal(self.board):
+            return self.utility(self.board), None
+    
+        v = -math.inf
+        move = ""
+    
+        for action in self.actions(self.board):
+            new_game = self.simulate_move(action)
+            v2, a2 = self.min_value(new_game, a, b)  # Swap player
+            if v2 > v:
+                v, move = v2, action
+                a = max(a, v)
+            if v >= b:
+                return v, move
+        return v, move
+
+
+
+    def min_value(self, a, b):
+        # check if game is terminal, if so return utility
+        if self.is_terminal(self.board):
+            return self.utility(self.board), None
+    
+        v = math.inf
+        move = ""
+        for action in self.actions(self.board):
+            # make copy of game with move made to not change the actual game board
+            new_game = self.simulate_move(action)
+            v2, a2 = self.max_value(new_game, a, b)  # Swap player
+            if v2 < v:
+                v, move = v2, action
+                b = min(b, v)
+            if v <= a:
+                return v, move
+        return v, move
 
     def make_move(self, move):
         source, target, remove = move.split()
@@ -46,13 +91,16 @@ class LaskerMorris:
                 return False
         elif source not in self.board or self.board[source] != self.turn:
             return False
+
         if self.players[self.turn]["stone_count"] > 3 and not self.check_correct_step(source, target):
             return False
+        
         if remove != "r0":
             if remove not in self.board or self.board[remove] is None or self.board[remove] == self.turn:
                 return False
             if not self.is_mill(source, target):
                 return False
+        # Player must remove an opponents stone if a mill is formed
         elif self.is_mill(source, target):
             return False
         return True
@@ -100,4 +148,13 @@ class LaskerMorris:
         new_game = copy.deepcopy(self)
         new_game.make_move(move)
         return new_game
+
+    def actions(self, board):
+        pass
+
+    def is_terminal(self, board):
+        pass
+
+    def utility(self, board):
+        pass
 
