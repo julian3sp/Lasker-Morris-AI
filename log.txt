@@ -1,0 +1,89 @@
+[2025-02-16 01:17:34.772300] WRITE: blue
+[2025-02-16 01:17:34.773005] WRITE: orange
+[2025-02-16 01:17:34.774914] READ: Traceback (most recent call last):
+[2025-02-16 01:18:01.814902] WRITE: blue
+[2025-02-16 01:18:01.815414] WRITE: orange
+[2025-02-16 01:18:01.816633] READ: Traceback (most recent call last):
+[2025-02-16 01:18:01.819157] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 01:18:01.820442] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 01:21:26.793717] WRITE: blue
+[2025-02-16 01:21:26.794203] WRITE: orange
+[2025-02-16 01:21:26.811388] READ: Traceback (most recent call last):
+[2025-02-16 01:21:26.812014] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 01:21:26.812605] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 01:41:55.053504] WRITE: blue
+[2025-02-16 01:41:55.054477] WRITE: orange
+[2025-02-16 01:41:55.070945] READ: Traceback (most recent call last):
+[2025-02-16 01:41:55.071899] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 01:41:55.072367] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 01:44:35.138143] WRITE: blue
+[2025-02-16 01:44:35.138584] WRITE: orange
+[2025-02-16 01:44:40.141211] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-16 01:44:40.141824] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-16 01:44:51.221375] READ: Traceback (most recent call last):
+[2025-02-16 02:01:02.452592] WRITE: blue
+[2025-02-16 02:01:02.453581] WRITE: orange
+[2025-02-16 02:01:02.479173] READ: h1 a1 r0
+[2025-02-16 02:01:02.480833] WRITE: h1 a1 r0
+[2025-02-16 02:01:07.496068] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-16 02:01:07.497314] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-16 02:02:56.877754] WRITE: blue
+[2025-02-16 02:02:56.878319] WRITE: orange
+[2025-02-16 02:02:56.977420] READ: h1 a1 r0
+[2025-02-16 02:02:56.978289] WRITE: h1 a1 r0
+[2025-02-16 02:03:01.989671] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-16 02:03:01.991795] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-16 02:04:08.818088] WRITE: blue
+[2025-02-16 02:04:08.818452] WRITE: orange
+[2025-02-16 02:04:08.919095] READ: h1 a1 r0
+[2025-02-16 02:04:08.920035] WRITE: h1 a1 r0
+[2025-02-16 02:04:09.019189] READ: h1 a1 r0
+[2025-02-16 02:04:09.020721] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:04:09.021076] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:06:19.795371] WRITE: blue
+[2025-02-16 02:06:19.795883] WRITE: orange
+[2025-02-16 02:06:19.896290] READ: h1 a1 r0
+[2025-02-16 02:06:19.897130] WRITE: h1 a1 r0
+[2025-02-16 02:06:20.000196] READ: h1 a1 r0
+[2025-02-16 02:06:20.001724] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:06:20.002090] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:06:45.504844] WRITE: blue
+[2025-02-16 02:06:45.505436] WRITE: orange
+[2025-02-16 02:06:45.520447] READ: h1 a1 r0
+[2025-02-16 02:06:45.521260] WRITE: h1 a1 r0
+[2025-02-16 02:06:45.533333] READ: h1 a1 r0
+[2025-02-16 02:06:45.534649] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:06:45.535130] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:12:58.313110] WRITE: blue
+[2025-02-16 02:12:58.313631] WRITE: orange
+[2025-02-16 02:12:58.334922] READ: Traceback (most recent call last):
+[2025-02-16 02:12:58.335769] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 02:12:58.336255] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-16 02:13:48.965846] WRITE: blue
+[2025-02-16 02:13:48.966153] WRITE: orange
+[2025-02-16 02:13:48.977852] READ: h1 a1 r0
+[2025-02-16 02:13:48.978611] WRITE: h1 a1 r0
+[2025-02-16 02:13:48.990028] READ: h1 a1 r0
+[2025-02-16 02:13:48.991382] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 02:13:48.991849] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 12:47:17.778745] WRITE: blue
+[2025-02-16 12:47:17.780525] WRITE: orange
+[2025-02-16 12:47:17.798827] READ: h1 a1 r0
+[2025-02-16 12:47:17.799951] WRITE: h1 a1 r0
+[2025-02-16 12:47:17.810894] READ: h1 a1 r0
+[2025-02-16 12:47:17.812630] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 12:47:17.813170] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 12:52:55.325174] WRITE: blue
+[2025-02-16 12:52:55.325972] WRITE: orange
+[2025-02-16 12:52:55.344731] READ: h1 a1 r0
+[2025-02-16 12:52:55.345837] WRITE: h1 a1 r0
+[2025-02-16 12:52:55.346642] READ: h1 a1 r0
+[2025-02-16 12:52:55.348102] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 12:52:55.348653] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 12:55:08.265929] WRITE: blue
+[2025-02-16 12:55:08.266946] WRITE: orange
+[2025-02-16 12:55:08.292918] READ: h1 a1 r0
+[2025-02-16 12:55:08.294423] WRITE: h1 a1 r0
+[2025-02-16 12:55:08.295238] READ: h1 a1 r0
+[2025-02-16 12:55:08.297426] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-16 12:55:08.298426] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
