@@ -4,19 +4,6 @@ import math
 import time
 
 stalemate_threshold = 20
-game_state = {
-    "board": {key: None for key in [
-        "a1", "a4", "a7", "b2", "b4", "b6", "c3", "c4", "c5",
-        "d1", "d2", "d3", "d5", "d6", "d7", "e3", "e4", "e5",
-        "f2", "f4", "f6", "g1", "g4", "g7"
-    ]},
-    "turn": "blue",
-    "players": {
-        "blue": {"stone_count": 10},
-        "orange": {"stone_count": 10}
-    },
-    "move_count": 0
-}
 
 def minimax(game, a, b, depth):
     value, move = max_value(game, a, b, depth)
@@ -25,38 +12,72 @@ def minimax(game, a, b, depth):
 def max_value(game, a, b, depth):
     # check if game is in a terminal state, if it is then return the utility value
     if is_terminal(game, depth):
-        return utility(game), None
+        return utility(game, depth), None
 
     v = -math.inf
     move = None
 
     for action in actions(game):
-        new_game = simulate_move(game)
-        v2, a2 = min_value(new_game, a, b, depth + 1)  # Swap player
-        if v2 > v:
-            v, move = v2, action
-            a = max(a, v)
-        if v >= b:
-            return v, move
+        new_game = simulate_move(game, action)
+        if heuristic(new_game) >= v:
+            v2, a2 = min_value(new_game, a, b, depth + 1)  # Swap player
+            if v2 > v:
+                v, move = v2, action
+                a = max(a, v)
+            if v >= b:
+                return v, move
     return v, move
 
 def min_value(game, a, b, depth):
     # check if game is terminal, if so return utility
-    if game.is_terminal(game, depth):
-        return game.utility(), None
+    if is_terminal(game, depth):
+        return utility(game, depth), None
 
     v = math.inf
     move = ""
-    for action in game.actions(game):
+    for action in actions(game):
         # make copy of game with move made to not change the actual game board
-        new_game = game.simulate_move(action)
-        v2, a2 = max_value(new_game, a, b, depth + 1)  # Swap player
-        if v2 < v:
-            v, move = v2, action
-            b = min(b, v)
-        if v <= a:
-            return v, move
+        new_game = simulate_move(game, action)
+        if heuristic(new_game) <= v:
+            v2, a2 = max_value(new_game, a, b, depth + 1)  # Swap player
+            if v2 < v:
+                v, move = v2, action
+                b = min(b, v)
+            if v <= a:
+                return v, move
     return v, move
+
+def heuristic(game):
+    current_turn = game["turn"]
+    opponent_turn = "orange" if current_turn == "blue" else "blue"
+
+    # Difference in stone count between the current player and the opponent
+    stone_count_diff = game["players"][current_turn]["stone_count"] - game["players"][opponent_turn]["stone_count"]
+
+    # The number of mills formed by each player
+    current_mills = count_mills(game, current_turn)
+    opponent_mills = count_mills(game, opponent_turn)
+    mills_diff = current_mills - opponent_mills
+
+    # Control is determined by the number of spaces occupied by the current player
+    current_control = sum(1 for pos in game["board"] if game["board"][pos] == current_turn)
+    opponent_control = sum(1 for pos in game["board"] if game["board"][pos] == opponent_turn)
+    control_diff = current_control - opponent_control
+
+    # The more valid moves a player has, the better their position
+    current_valid_moves = len(actions(game))
+    opponent_valid_moves = len(actions(game))
+    move_diff = current_valid_moves - opponent_valid_moves
+
+    # Combine all heuristics to form a final heuristic value
+    heuristic_value = (
+            10 * stone_count_diff +  # Stone count is important, but not as much as mills
+            50 * mills_diff +        # Mills are very important (can control the game)
+            5 * control_diff +       # Board control matters, but less than mills and less than stone count
+            2 * move_diff  # Future potential is useful, but less crucial
+    )
+
+    return heuristic_value
 
 def switch_turn(game):
     game["turn"] = "orange" if game["turn"] == "blue" else "blue"
@@ -97,10 +118,39 @@ def is_mill(game, source, target):
                 return True
 
     return False
+def count_mills(game, color):
 
+    mills = [
+        # Horizontal mills
+        ["a1", "a4", "a7"],
+        ["b2", "b4", "b6"],
+        ["c3", "c4", "c5"],
+        ["d1", "d2", "d3"],
+        ["d5", "d6", "d7"],
+        ["e3", "e4", "e5"],
+        ["f2", "f4", "f6"],
+        ["g1", "g4", "g7"],
+        # Vertical mills
+        ["a1", "d1", "g1"],
+        ["b2", "d2", "f2"],
+        ["c3", "d3", "e3"],
+        ["a4", "b4", "c4"],
+        ["e4", "f4", "g4"],
+        ["c5", "d5", "e5"],
+        ["b6", "d6", "f6"],
+        ["a7", "d7", "g7"],
+    ]
+
+    mill_count = 0
+
+    for mill in mills:
+        if all(game["board"][pos] == color for pos in mill):
+            mill_count += 1
+
+    return mill_count
 def is_valid_move(game, source, target, remove):
-    current_turn = game["players"]["turn"]
-    stone_count = game["players"]["turn"]["stone_count"]
+    current_turn = game["turn"]
+    stone_count = game["players"][current_turn]["stone_count"]
     if target not in game["board"] or game["board"][target] is not None:
         return False
 
@@ -117,10 +167,10 @@ def is_valid_move(game, source, target, remove):
     if remove != "r0":
         if remove not in game["board"] or game["board"][remove] is None or game["board"][remove] == current_turn:
             return False
-        if not is_mill(source, target):
+        if not is_mill(game, source, target):
             return False
     # Player must remove an opponents stone if a mill is formed
-    elif is_mill(source, target):
+    elif is_mill(game, source, target):
         return False
     return True
 
@@ -153,38 +203,9 @@ def check_correct_step(source, target):
     }
     return source in neighbors and target in neighbors[source]
 
-def make_move(game, move):
-    current_turn = game["players"]["turn"]
-    board = game["board"]
-    source, target, remove = move.split()
-    if not source or not target or not remove:
-        print("Invalid move")
-        sys.exit(0)
-    if is_valid_move(source, target, remove):
-        execute_move(source, target, remove)
-    else:
-        print(f"invalid move {source} {target} {remove} {current_turn} {board}")
-        sys.exit(0)
-
-def execute_move(game, source, target, remove):
-    current_turn = game["players"]["turn"]
-    game["board"][target] = current_turn
-    if source.startswith('h'):
-        game["players"][current_turn]["stone_count"] -= 1
-    else:
-        game["board"][source] = None
-    if remove != "r0":
-        game["board"][remove] = None
-    switch_turn(game)
-
-def simulate_move(game, move):
-    new_game = copy.deepcopy(game)
-    make_move(new_game, move)
-    return new_game
-
 def actions(game):
     possible_moves = []
-    current_turn = game["players"]["turn"]
+    current_turn = game["turn"]
     # Moves from hand
     if game["players"][current_turn]["stone_count"] > 0:
         for target in game["board"]:
@@ -194,15 +215,15 @@ def actions(game):
                 hand_move = f"{source} {target} r0"
 
                 # Check for mill
-                if is_mill(f"h{1 if current_turn == 'blue' else 2}", target):  # Only pass the position
+                if is_mill(game, f"h{1 if current_turn == 'blue' else 2}", target):  # Only pass the position
                     for remove in game["board"]:
 
                         if game["board"][remove] is not None and game["board"][remove] != current_turn:
 
                             move = f"{source} {target} {remove}"
 
-                            if move not in possible_moves and is_valid_move(source, target, remove):
-                                possible_moves.append(f"{source} {target} {remove}")
+                            if move not in possible_moves and is_valid_move(game, source, target, remove):
+                                possible_moves.append(move)
                 else:
                     if hand_move not in possible_moves:
                         possible_moves.append(hand_move)
@@ -218,14 +239,15 @@ def actions(game):
                             move = f"{source} {target} r0"
 
                             # Check for mill
-                            if is_mill(source, target):  # Only pass the target position
+                            if is_mill(game, source, target):  # Only pass the target position
                                 for remove in game["board"]:
                                     if game["board"][remove] is not None and game["board"][remove] != current_turn:
                                         move = f"{source} {target} {remove}"
-                                        if move not in possible_moves and is_valid_move(source, target, remove):
-                                            possible_moves.append(f"{source} {target} {remove}")
+                                        if move not in possible_moves and is_valid_move(game, source, target, remove):
+                                            possible_moves.append(move)
+
                             else:
-                                if move not in possible_moves and is_valid_move(source, target, "r0"):
+                                if move not in possible_moves and is_valid_move(game, source, target, "r0"):
                                     possible_moves.append(move)
 
     # Flying phase (moving a stone)
@@ -238,45 +260,80 @@ def actions(game):
                         move = f"{source} {target} r0"
 
                         # Check for mill
-                        if is_mill(source, target):
+                        if is_mill(game, source, target):
                             for remove in game["board"]:
                                 if game["board"][remove] is not None and game["board"][remove] != current_turn:
                                     move = f"{source} {target} {remove}"
-                                    if move not in possible_moves and is_valid_move(source, target, remove):
+                                    if move not in possible_moves and is_valid_move(game, source, target, remove):
                                         possible_moves.append(f"{source} {target} {remove}")
                         else:
-                            if move not in possible_moves and is_valid_move(source, target, "r0"):
+                            if move not in possible_moves and is_valid_move(game, source, target, "r0"):
                                 possible_moves.append(move)
 
-    return possible_moves if possible_moves else None
+    return possible_moves
 
+def make_move(game, move):
+    current_turn = game["turn"]
+    board = game["board"]
+    source, target, remove = move.split()
+    if not source or not target or not remove:
+        print("Invalid move")
+        sys.exit(0)
+    if is_valid_move(game, source, target, remove):
+        execute_move(game, source, target, remove)
+    else:
+        print(f"invalid move {source} {target} {remove} {current_turn} {board}")
+        sys.exit(0)
+
+def execute_move(game, source, target, remove):
+    current_turn = game["turn"]
+    game["board"][target] = current_turn
+    if source.startswith('h'):
+        game["players"][current_turn]["stone_count"] -= 1
+        game["move_count"] += 1
+    else:
+        game["board"][source] = None
+        game["move_count"] += 1
+    if remove != "r0":
+        game["board"][remove] = None
+        game["move_count"] = 0
+
+def simulate_move(game, move):
+    new_game = copy.deepcopy(game)
+    make_move(new_game, move)
+    return new_game
 
 def is_terminal(game, depth):
+    blue_stone_count = game["players"]["blue"]["stone_count"] + sum(1 for cell in game["board"] if cell == "blue")
+    orange_stone_count = game["players"]["orange"]["stone_count"] + sum(1 for cell in game["board"] if cell == "orange")
     if depth == 3:
         return True
-    if game["players"]["blue"]["stone_count"] == 2 or game["players"]["orange"]["stone_count"] == 2:
+    if blue_stone_count == 2 or orange_stone_count == 2:
         return True
     if actions(game) is None:
         return True
     if game["move_count"] == 20:
         return True
 
-def utility(game):
-    current_turn = game["players"]["turn"]
-    if game["players"]["blue"]["stone_count"] == 2:
+def utility(game, depth):
+    current_turn = game["turn"]
+    blue_stone_count = game["players"]["blue"]["stone_count"] + sum(1 for cell in game["board"] if cell == "blue")
+    orange_stone_count = game["players"]["orange"]["stone_count"] + sum(1 for cell in game["board"] if cell == "orange")
+
+    if blue_stone_count  == 2:
         return -100
-    if game["players"]["orange"]["stone_count"] == 2:
+    if orange_stone_count  == 2:
         return 100
-    if actions(game) is None and current_turn == "orange":
-        return 100
-    if actions(game) is None and current_turn == "blue":
-        return -100
-    if game["move_count"] == 20:
-        return 0
-    # evaluation, intial thought is since the main goal is to remove as many of the opponents pieces from the board,
-    # give states that give me a greater difference between both game["players"] stone count a larger value
-    return game["players"]["blue"]["stone_count"] - game["players"]["orange"]["stone_count"]
-    # will be negative for states favorable to orange and positive for blue, this aligns with the minimax algo
+
+    available_actions = actions(game)
+    if available_actions is None:
+        if current_turn == "orange":
+            return 100
+        if current_turn == "blue":
+            return -100
+
+    # Evaluate based on stone count difference if max depth is reached
+    return heuristic(game)
 
 
 def main():
@@ -284,20 +341,31 @@ def main():
     player_id = input().strip()
     a = -math.inf
     b = math.inf
-    if player_id == "blue":
-        turn = "blue"
-    elif player_id == "orange":
-        turn = "orange"
-    else:
-        print("Please enter a valid player name. Either 'blue' or 'orange'")
-        sys.exit(0)
+    game_state = {
+        "board": {key: None for key in [
+            "a1", "a4", "a7", "b2", "b4", "b6", "c3", "c4", "c5",
+            "d1", "d2", "d3", "d5", "d6", "d7", "e3", "e4", "e5",
+            "f2", "f4", "f6", "g1", "g4", "g7"
+        ]},
+        "turn": "blue" if player_id == "blue" else "orange",
+        "players": {
+            "blue": {"stone_count": 10},
+            "orange": {"stone_count": 10}
+        },
+        "move_count": 0
+    }
+
     while True:
         # if I am X, produce the first move
+        if game_state["move_count"] == stalemate_threshold:
+            print("stalemate")
+            sys.exit(0)
         try:
-            if turn == "orange":
+            if game_state["turn"] == "orange":
                 # collect move
                 game_input = input().strip()
                 make_move(game_state, game_input)
+                switch_turn(game_state)
             else:
                 start_time = time.time()
                 # Your move logic here
@@ -309,8 +377,9 @@ def main():
                 if elapsed_time > 5:
                     print("Time limit exceeded")
                     sys.exit(0)
-                # check if move is valid
+                    # check if move is valid
                 print(move, flush=True)
+                switch_turn(game_state)
                 # no longer our players turn
 
         except EOFError:
