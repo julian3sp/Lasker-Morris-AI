@@ -297,3 +297,792 @@
 [2025-02-17 15:43:44.083537] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
 [2025-02-17 15:43:44.084398] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
 [2025-02-17 15:43:44.084942] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 16:33:41.967353] WRITE: blue
+[2025-02-17 16:33:41.968031] WRITE: orange
+[2025-02-17 16:33:42.031964] READ: h1 a1 r0
+[2025-02-17 16:33:42.032748] WRITE: h1 a1 r0
+[2025-02-17 16:33:47.042752] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 16:33:47.044204] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 16:33:47.072074] READ: Traceback (most recent call last):
+[2025-02-17 16:33:47.072866] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 16:33:47.073289] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 16:34:55.176243] WRITE: blue
+[2025-02-17 16:34:55.176673] WRITE: orange
+[2025-02-17 16:34:55.242547] READ: h1 a1 r0
+[2025-02-17 16:34:55.243284] WRITE: h1 a1 r0
+[2025-02-17 16:35:00.254745] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 16:35:00.256329] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 16:35:00.286106] READ: Traceback (most recent call last):
+[2025-02-17 16:35:00.287621] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 16:35:00.288863] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 16:35:24.277305] WRITE: blue
+[2025-02-17 16:35:24.277720] WRITE: orange
+[2025-02-17 16:35:24.342261] READ: h1 a1 r0
+[2025-02-17 16:35:24.343069] WRITE: h1 a1 r0
+[2025-02-17 16:35:24.404788] READ: h1 a1 r0
+[2025-02-17 16:35:24.406242] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 16:35:24.406887] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 16:41:37.215825] WRITE: blue
+[2025-02-17 16:41:37.216233] WRITE: orange
+[2025-02-17 16:41:42.218014] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 16:41:42.219922] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 16:41:42.251461] READ: Traceback (most recent call last):
+[2025-02-17 16:41:42.252440] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 16:41:42.252883] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 16:43:29.754130] WRITE: blue
+[2025-02-17 16:43:29.754555] WRITE: orange
+[2025-02-17 16:43:29.818383] READ: h1 a1 r0
+[2025-02-17 16:43:29.819250] WRITE: h1 a1 r0
+[2025-02-17 16:43:29.881142] READ: h1 a1 r0
+[2025-02-17 16:43:29.882876] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 16:43:29.883454] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 16:45:14.315220] WRITE: blue
+[2025-02-17 16:45:14.315712] WRITE: orange
+[2025-02-17 16:45:14.377637] READ: invalid move given {'board': {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'blue', 'players': {'blue': {'stone_count': 10}, 'orange': {'stone_count': 10}}, 'move_count': 0} h1 a1 r0
+[2025-02-17 16:45:14.378516] WRITE: END: orange WINS! blue LOSES! Invalid move invalid move given {'board': {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'blue', 'players': {'blue': {'stone_count': 10}, 'orange': {'stone_count': 10}}, 'move_count': 0} h1 a1 r0!
+[2025-02-17 16:45:14.378923] WRITE: END: orange WINS! blue LOSES! Invalid move invalid move given {'board': {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'blue', 'players': {'blue': {'stone_count': 10}, 'orange': {'stone_count': 10}}, 'move_count': 0} h1 a1 r0!
+[2025-02-17 16:46:47.453627] WRITE: blue
+[2025-02-17 16:46:47.454127] WRITE: orange
+[2025-02-17 16:46:47.532661] READ: h1 a1 r0
+[2025-02-17 16:46:47.533591] WRITE: h1 a1 r0
+[2025-02-17 16:46:47.598245] READ: h1 a1 r0
+[2025-02-17 16:46:47.599457] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 16:46:47.599940] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 16:48:00.385347] WRITE: blue
+[2025-02-17 16:48:00.385930] WRITE: orange
+[2025-02-17 16:48:00.448808] READ: h1 a1 r0
+[2025-02-17 16:48:00.449613] WRITE: h1 a1 r0
+[2025-02-17 16:48:00.468697] READ: Traceback (most recent call last):
+[2025-02-17 16:48:00.469607] WRITE: END: blue WINS! orange LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 16:48:00.469910] WRITE: END: blue WINS! orange LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 16:48:21.875468] WRITE: blue
+[2025-02-17 16:48:21.875846] WRITE: orange
+[2025-02-17 16:48:21.938721] READ: h1 a1 r0
+[2025-02-17 16:48:21.939561] WRITE: h1 a1 r0
+[2025-02-17 16:48:22.001059] READ: invalid move given {'board': {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'orange', 'players': {'blue': {'stone_count': 10}, 'orange': {'stone_count': 10}}, 'move_count': 0} h1 a1 r0
+[2025-02-17 16:48:22.002166] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move given {'board': {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'orange', 'players': {'blue': {'stone_count': 10}, 'orange': {'stone_count': 10}}, 'move_count': 0} h1 a1 r0!
+[2025-02-17 16:48:22.002708] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move given {'board': {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'orange', 'players': {'blue': {'stone_count': 10}, 'orange': {'stone_count': 10}}, 'move_count': 0} h1 a1 r0!
+[2025-02-17 16:50:52.180344] WRITE: blue
+[2025-02-17 16:50:52.180821] WRITE: orange
+[2025-02-17 16:50:52.242772] READ: h1 a1 r0
+[2025-02-17 16:50:52.243637] WRITE: h1 a1 r0
+[2025-02-17 16:50:52.280386] READ: Traceback (most recent call last):
+[2025-02-17 16:50:52.281007] WRITE: END: blue WINS! orange LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 16:50:52.281547] WRITE: END: blue WINS! orange LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 16:52:06.309609] WRITE: blue
+[2025-02-17 16:52:06.310058] WRITE: orange
+[2025-02-17 16:52:06.371707] READ: h1 a1 r0
+[2025-02-17 16:52:06.372681] WRITE: h1 a1 r0
+[2025-02-17 16:52:06.429055] READ: h1 a4 r0
+[2025-02-17 16:52:06.430319] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:52:06.430706] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:56:37.024650] WRITE: blue
+[2025-02-17 16:56:37.025166] WRITE: orange
+[2025-02-17 16:56:37.086554] READ: h1 a1 r0
+[2025-02-17 16:56:37.087660] WRITE: h1 a1 r0
+[2025-02-17 16:56:37.144103] READ: h1 a4 r0
+[2025-02-17 16:56:37.145766] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:56:37.146383] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:58:31.466540] WRITE: blue
+[2025-02-17 16:58:31.466979] WRITE: orange
+[2025-02-17 16:58:31.529405] READ: h1 a1 r0
+[2025-02-17 16:58:31.530203] WRITE: h1 a1 r0
+[2025-02-17 16:58:31.589179] READ: h1 a4 r0
+[2025-02-17 16:58:31.591227] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:58:31.591774] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:58:45.497375] WRITE: blue
+[2025-02-17 16:58:45.497788] WRITE: orange
+[2025-02-17 16:58:45.560007] READ: h1 a1 r0
+[2025-02-17 16:58:45.560932] WRITE: h1 a1 r0
+[2025-02-17 16:58:45.618084] READ: h1 a4 r0
+[2025-02-17 16:58:45.620043] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:58:45.620630] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:59:57.302544] WRITE: blue
+[2025-02-17 16:59:57.303067] WRITE: orange
+[2025-02-17 16:59:57.363411] READ: h1 a1 r0
+[2025-02-17 16:59:57.364190] WRITE: h1 a1 r0
+[2025-02-17 16:59:57.421646] READ: h1 a4 r0
+[2025-02-17 16:59:57.423021] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 16:59:57.423424] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 17:09:18.149467] WRITE: blue
+[2025-02-17 17:09:18.149896] WRITE: orange
+[2025-02-17 17:09:18.154534] READ: invalid move h1 a7 r0 orange {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 17:09:18.155400] WRITE: END: orange WINS! blue LOSES! Invalid move invalid move h1 a7 r0 orange {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 17:09:18.155817] WRITE: END: orange WINS! blue LOSES! Invalid move invalid move h1 a7 r0 orange {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 17:12:00.161596] WRITE: blue
+[2025-02-17 17:12:00.162506] WRITE: orange
+[2025-02-17 17:12:00.166379] READ: invalid hand move
+[2025-02-17 17:12:00.168424] WRITE: END: orange WINS! blue LOSES! Invalid move invalid hand move!
+[2025-02-17 17:12:00.169022] WRITE: END: orange WINS! blue LOSES! Invalid move invalid hand move!
+[2025-02-17 17:12:32.219717] WRITE: blue
+[2025-02-17 17:12:32.220146] WRITE: orange
+[2025-02-17 17:12:32.226067] READ: invalid hand move
+[2025-02-17 17:12:32.227949] WRITE: END: orange WINS! blue LOSES! Invalid move invalid hand move!
+[2025-02-17 17:12:32.228442] WRITE: END: orange WINS! blue LOSES! Invalid move invalid hand move!
+[2025-02-17 17:34:45.113517] WRITE: blue
+[2025-02-17 17:34:45.114046] WRITE: orange
+[2025-02-17 17:34:45.194438] READ: h1 a1 r0
+[2025-02-17 17:34:45.195143] WRITE: h1 a1 r0
+[2025-02-17 17:34:45.196992] READ: h2 a1 r0
+[2025-02-17 17:34:45.198140] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:34:45.198458] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:36:32.055265] WRITE: blue
+[2025-02-17 17:36:32.055811] WRITE: orange
+[2025-02-17 17:36:32.128717] READ: h1 a1 r0
+[2025-02-17 17:36:32.129687] WRITE: h1 a1 r0
+[2025-02-17 17:36:32.130692] READ: h2 a1 r0
+[2025-02-17 17:36:32.131979] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:36:32.132446] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:41:18.425434] WRITE: blue
+[2025-02-17 17:41:18.425824] WRITE: orange
+[2025-02-17 17:41:18.498629] READ: h1 a1 r0
+[2025-02-17 17:41:18.499394] WRITE: h1 a1 r0
+[2025-02-17 17:41:18.500296] READ: h2 a1 r0
+[2025-02-17 17:41:18.501358] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:41:18.501699] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:43:28.670153] WRITE: blue
+[2025-02-17 17:43:28.670760] WRITE: orange
+[2025-02-17 17:43:28.720128] READ: h1 a1 r0
+[2025-02-17 17:43:28.721111] WRITE: h1 a1 r0
+[2025-02-17 17:43:28.721925] READ: h2 a1 r0
+[2025-02-17 17:43:28.723168] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 17:43:28.723557] WRITE: END: blue WINS! orange LOSES! Invalid move h2 a1 r0!
+[2025-02-17 18:23:41.397924] WRITE: blue
+[2025-02-17 18:23:41.400617] WRITE: orange
+[2025-02-17 18:23:41.444990] READ: h1 a1 r0
+[2025-02-17 18:23:41.445829] WRITE: h1 a1 r0
+[2025-02-17 18:23:41.446422] READ: h1 a1 r0
+[2025-02-17 18:23:41.447603] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:23:41.448105] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:27:29.229307] WRITE: blue
+[2025-02-17 18:27:29.230250] WRITE: orange
+[2025-02-17 18:27:29.298582] READ: h1 a1 r0
+[2025-02-17 18:27:29.300104] WRITE: h1 a1 r0
+[2025-02-17 18:27:29.301524] READ: h1 a1 r0
+[2025-02-17 18:27:29.304051] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:27:29.304974] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:46:16.515818] WRITE: blue
+[2025-02-17 18:46:16.516968] WRITE: orange
+[2025-02-17 18:46:16.555494] READ: h1 a1 r0
+[2025-02-17 18:46:16.556509] WRITE: h1 a1 r0
+[2025-02-17 18:46:16.567346] READ: h1 a1 r0
+[2025-02-17 18:46:16.569219] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:46:16.569830] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:46:42.264944] WRITE: blue
+[2025-02-17 18:46:42.265541] WRITE: orange
+[2025-02-17 18:46:42.303507] READ: h1 a1 r0
+[2025-02-17 18:46:42.304548] WRITE: h1 a1 r0
+[2025-02-17 18:46:42.314071] READ: h1 a1 r0
+[2025-02-17 18:46:42.315758] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:46:42.316355] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:48:20.910680] WRITE: blue
+[2025-02-17 18:48:20.911358] WRITE: orange
+[2025-02-17 18:48:20.975655] READ: h1 a1 r0
+[2025-02-17 18:48:20.977474] WRITE: h1 a1 r0
+[2025-02-17 18:48:20.978526] READ: h1 a1 r0
+[2025-02-17 18:48:20.981316] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:48:20.982520] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:57:36.697631] WRITE: blue
+[2025-02-17 18:57:36.698308] WRITE: orange
+[2025-02-17 18:57:36.736006] READ: h1 a1 r0
+[2025-02-17 18:57:36.737065] WRITE: h1 a1 r0
+[2025-02-17 18:57:36.749423] READ: h1 a1 r0
+[2025-02-17 18:57:36.751693] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:57:36.752307] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a1 r0!
+[2025-02-17 18:59:51.947724] WRITE: blue
+[2025-02-17 18:59:51.948418] WRITE: orange
+[2025-02-17 18:59:52.008272] READ: h1 a1 r0
+[2025-02-17 18:59:52.009376] WRITE: h1 a1 r0
+[2025-02-17 18:59:52.010542] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 18:59:52.011419] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 18:59:52.011926] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 19:00:30.459636] WRITE: blue
+[2025-02-17 19:00:30.460252] WRITE: orange
+[2025-02-17 19:00:30.497008] READ: {'board': {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'orange', 'players': {'blue': {'stone_count': 9, 'hand': 'h1'}, 'orange': {'stone_count': 10, 'hand': 'h2'}}, 'move_count': 1}
+[2025-02-17 19:00:30.498133] WRITE: END: orange WINS! blue LOSES! Invalid move {'board': {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'orange', 'players': {'blue': {'stone_count': 9, 'hand': 'h1'}, 'orange': {'stone_count': 10, 'hand': 'h2'}}, 'move_count': 1}!
+[2025-02-17 19:00:30.498832] WRITE: END: orange WINS! blue LOSES! Invalid move {'board': {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}, 'turn': 'orange', 'players': {'blue': {'stone_count': 9, 'hand': 'h1'}, 'orange': {'stone_count': 10, 'hand': 'h2'}}, 'move_count': 1}!
+[2025-02-17 19:17:41.076104] WRITE: blue
+[2025-02-17 19:17:41.079996] WRITE: orange
+[2025-02-17 19:17:41.121806] READ: h1 a1 r0
+[2025-02-17 19:17:41.122913] WRITE: h1 a1 r0
+[2025-02-17 19:17:41.124050] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 19:17:41.125030] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 19:17:41.125476] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 19:29:49.021652] WRITE: blue
+[2025-02-17 19:29:49.022373] WRITE: orange
+[2025-02-17 19:29:49.064417] READ: h1 a1 r0
+[2025-02-17 19:29:49.065541] WRITE: h1 a1 r0
+[2025-02-17 19:29:54.082156] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 19:29:54.082920] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 19:29:54.102903] READ: Traceback (most recent call last):
+[2025-02-17 19:29:54.109387] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 19:29:54.109966] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 19:36:47.794543] WRITE: blue
+[2025-02-17 19:36:47.795240] WRITE: orange
+[2025-02-17 19:36:47.844279] READ: h1 a1 r0
+[2025-02-17 19:36:47.845445] WRITE: h1 a1 r0
+[2025-02-17 19:36:52.857829] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 19:36:52.858714] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 19:36:52.881108] READ: Traceback (most recent call last):
+[2025-02-17 19:36:52.882078] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 19:36:52.882474] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 20:08:38.668794] WRITE: blue
+[2025-02-17 20:08:38.669777] WRITE: orange
+[2025-02-17 20:08:38.706713] READ: h1 a1 r0
+[2025-02-17 20:08:38.707883] WRITE: h1 a1 r0
+[2025-02-17 20:08:38.768631] READ: a1 a4 r0
+[2025-02-17 20:08:38.770619] WRITE: END: blue WINS! orange LOSES! Invalid move a1 a4 r0!
+[2025-02-17 20:08:38.771181] WRITE: END: blue WINS! orange LOSES! Invalid move a1 a4 r0!
+[2025-02-17 20:10:25.347770] WRITE: blue
+[2025-02-17 20:10:25.348423] WRITE: orange
+[2025-02-17 20:10:25.393372] READ: h1 a1 r0
+[2025-02-17 20:10:25.394568] WRITE: h1 a1 r0
+[2025-02-17 20:10:25.410559] READ: Traceback (most recent call last):
+[2025-02-17 20:10:25.411439] WRITE: END: blue WINS! orange LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 20:10:25.411895] WRITE: END: blue WINS! orange LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 20:13:52.400375] WRITE: blue
+[2025-02-17 20:13:52.400953] WRITE: orange
+[2025-02-17 20:13:52.441409] READ: h1 a1 r0
+[2025-02-17 20:13:52.442348] WRITE: h1 a1 r0
+[2025-02-17 20:13:52.798526] READ: h1 a4 r0
+[2025-02-17 20:13:52.800198] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:13:52.800719] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:14:34.073791] WRITE: blue
+[2025-02-17 20:14:34.074400] WRITE: orange
+[2025-02-17 20:14:34.111519] READ: h1 a1 r0
+[2025-02-17 20:14:34.112513] WRITE: h1 a1 r0
+[2025-02-17 20:14:39.118945] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 20:14:39.119498] WRITE: END: blue WINS! orange LOSES! Time out!
+[2025-02-17 20:14:39.137211] READ: Traceback (most recent call last):
+[2025-02-17 20:14:39.138031] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 20:14:39.138540] WRITE: END: blue WINS! orange LOSES! Invalid move None!
+[2025-02-17 20:15:41.210282] WRITE: blue
+[2025-02-17 20:15:41.210965] WRITE: orange
+[2025-02-17 20:15:41.255415] READ: h1 a1 r0
+[2025-02-17 20:15:41.256508] WRITE: h1 a1 r0
+[2025-02-17 20:15:41.604726] READ: h1 a4 r0
+[2025-02-17 20:15:41.606562] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:15:41.607078] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:21:59.859967] WRITE: blue
+[2025-02-17 20:21:59.860671] WRITE: orange
+[2025-02-17 20:21:59.898396] READ: h1 a1 r0
+[2025-02-17 20:21:59.899472] WRITE: h1 a1 r0
+[2025-02-17 20:22:00.264045] READ: h1 a4 r0
+[2025-02-17 20:22:00.265623] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:22:00.266173] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:25:17.628449] WRITE: blue
+[2025-02-17 20:25:17.629080] WRITE: orange
+[2025-02-17 20:25:17.668931] READ: h1 a1 r0
+[2025-02-17 20:25:17.670017] WRITE: h1 a1 r0
+[2025-02-17 20:25:18.029279] READ: h1 a4 r0
+[2025-02-17 20:25:18.030961] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:25:18.031535] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:30:40.574410] WRITE: blue
+[2025-02-17 20:30:40.575024] WRITE: orange
+[2025-02-17 20:30:40.613797] READ: h1 a1 r0
+[2025-02-17 20:30:40.614926] WRITE: h1 a1 r0
+[2025-02-17 20:30:40.682236] READ: a1 a4 r0
+[2025-02-17 20:30:40.684329] WRITE: END: blue WINS! orange LOSES! Invalid move a1 a4 r0!
+[2025-02-17 20:30:40.684918] WRITE: END: blue WINS! orange LOSES! Invalid move a1 a4 r0!
+[2025-02-17 20:31:06.490443] WRITE: blue
+[2025-02-17 20:31:06.491065] WRITE: orange
+[2025-02-17 20:31:06.530726] READ: h2 a1 r0
+[2025-02-17 20:31:06.532801] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 20:31:06.533292] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 20:31:26.041233] WRITE: blue
+[2025-02-17 20:31:26.041705] WRITE: orange
+[2025-02-17 20:31:26.089458] READ: h1 a1 r0
+[2025-02-17 20:31:26.090485] WRITE: h1 a1 r0
+[2025-02-17 20:31:26.168474] READ: invalid move a1 a4 r0 orange {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 20:31:26.169860] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move a1 a4 r0 orange {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 20:31:26.170686] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move a1 a4 r0 orange {'a1': 'blue', 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 20:32:01.230035] WRITE: blue
+[2025-02-17 20:32:01.230995] WRITE: orange
+[2025-02-17 20:32:01.295908] READ: h1 a1 r0
+[2025-02-17 20:32:01.297097] WRITE: h1 a1 r0
+[2025-02-17 20:32:01.895231] READ: h1 a4 r0
+[2025-02-17 20:32:01.897407] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:32:01.898215] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:35:08.702667] WRITE: blue
+[2025-02-17 20:35:08.703268] WRITE: orange
+[2025-02-17 20:35:08.767550] READ: h1 a1 r0
+[2025-02-17 20:35:08.768830] WRITE: h1 a1 r0
+[2025-02-17 20:35:08.872867] READ: a1 a4 r0
+[2025-02-17 20:35:08.874778] WRITE: END: blue WINS! orange LOSES! Invalid move a1 a4 r0!
+[2025-02-17 20:35:08.875660] WRITE: END: blue WINS! orange LOSES! Invalid move a1 a4 r0!
+[2025-02-17 20:36:26.007519] WRITE: blue
+[2025-02-17 20:36:26.008070] WRITE: orange
+[2025-02-17 20:36:26.040380] READ: h1 a1 r0
+[2025-02-17 20:36:26.041428] WRITE: h1 a1 r0
+[2025-02-17 20:36:26.333372] READ: h1 a4 r0
+[2025-02-17 20:36:26.334949] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:36:26.335424] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:57:57.713418] WRITE: blue
+[2025-02-17 20:57:57.714233] WRITE: orange
+[2025-02-17 20:57:57.755224] READ: h1 a1 r0
+[2025-02-17 20:57:57.756243] WRITE: h1 a1 r0
+[2025-02-17 20:57:58.105303] READ: h1 a4 r0
+[2025-02-17 20:57:58.107080] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:57:58.107593] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:59:40.515849] WRITE: blue
+[2025-02-17 20:59:40.516903] WRITE: orange
+[2025-02-17 20:59:40.580177] READ: h1 a1 r0
+[2025-02-17 20:59:40.581824] WRITE: h1 a1 r0
+[2025-02-17 20:59:41.191942] READ: h1 a4 r0
+[2025-02-17 20:59:41.194179] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 20:59:41.195028] WRITE: END: blue WINS! orange LOSES! Invalid move h1 a4 r0!
+[2025-02-17 21:20:16.202422] WRITE: blue
+[2025-02-17 21:20:16.203183] WRITE: orange
+[2025-02-17 21:20:16.248414] READ: h1 a1 r0
+[2025-02-17 21:20:16.249535] WRITE: h1 a1 r0
+[2025-02-17 21:20:16.250706] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 21:20:16.251564] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:20:16.252103] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:22:43.467075] WRITE: blue
+[2025-02-17 21:22:43.467708] WRITE: orange
+[2025-02-17 21:22:48.471182] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:22:48.471968] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:22:48.488249] READ: Traceback (most recent call last):
+[2025-02-17 21:22:48.488865] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:22:48.489345] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:28:19.338115] WRITE: blue
+[2025-02-17 21:28:19.338945] WRITE: orange
+[2025-02-17 21:28:24.343146] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:28:24.343875] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:28:24.360170] READ: Traceback (most recent call last):
+[2025-02-17 21:28:24.360986] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:28:24.361470] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:30:21.468483] WRITE: blue
+[2025-02-17 21:30:21.469104] WRITE: orange
+[2025-02-17 21:30:21.506527] READ: h2 a1 r0
+[2025-02-17 21:30:21.508602] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 21:30:21.509169] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 21:32:30.457628] WRITE: blue
+[2025-02-17 21:32:30.458255] WRITE: orange
+[2025-02-17 21:32:35.467799] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:32:35.468382] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:32:35.489680] READ: Traceback (most recent call last):
+[2025-02-17 21:32:35.490598] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:32:35.491094] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:34:05.217069] WRITE: blue
+[2025-02-17 21:34:05.217663] WRITE: orange
+[2025-02-17 21:38:17.985224] WRITE: blue
+[2025-02-17 21:38:17.985808] WRITE: orange
+[2025-02-17 21:38:18.025844] READ: h2 a1 r0
+[2025-02-17 21:38:18.027531] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 21:38:18.028116] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 21:39:12.226216] WRITE: blue
+[2025-02-17 21:39:12.226824] WRITE: orange
+[2025-02-17 21:39:12.271311] READ: h1 a1 r0
+[2025-02-17 21:39:12.272220] WRITE: h1 a1 r0
+[2025-02-17 21:39:12.273156] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 21:39:12.274346] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:39:12.275047] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:40:55.334480] WRITE: blue
+[2025-02-17 21:40:55.335336] WRITE: orange
+[2025-02-17 21:41:00.348533] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:41:00.349991] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:41:00.391779] READ: Traceback (most recent call last):
+[2025-02-17 21:41:00.393021] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:41:00.393967] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:42:33.571853] WRITE: blue
+[2025-02-17 21:42:33.572713] WRITE: orange
+[2025-02-17 21:42:33.619707] READ: h1 a1 r0
+[2025-02-17 21:42:33.620575] WRITE: h1 a1 r0
+[2025-02-17 21:42:33.621340] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 21:42:33.622004] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:42:33.622469] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:45:06.470300] WRITE: blue
+[2025-02-17 21:45:06.471387] WRITE: orange
+[2025-02-17 21:45:06.516508] READ: h1 a1 r0
+[2025-02-17 21:45:06.517505] WRITE: h1 a1 r0
+[2025-02-17 21:45:06.518161] READ: invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}
+[2025-02-17 21:45:06.518893] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:45:06.519386] WRITE: END: blue WINS! orange LOSES! Invalid move invalid move h1 a1 r0 orange {'a1': None, 'a4': None, 'a7': None, 'b2': None, 'b4': None, 'b6': None, 'c3': None, 'c4': None, 'c5': None, 'd1': None, 'd2': None, 'd3': None, 'd5': None, 'd6': None, 'd7': None, 'e3': None, 'e4': None, 'e5': None, 'f2': None, 'f4': None, 'f6': None, 'g1': None, 'g4': None, 'g7': None}!
+[2025-02-17 21:46:05.637835] WRITE: blue
+[2025-02-17 21:46:05.638279] WRITE: orange
+[2025-02-17 21:46:10.648157] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:46:10.649358] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:46:10.685809] READ: Traceback (most recent call last):
+[2025-02-17 21:46:10.686784] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:46:10.687321] WRITE: END: orange WINS! blue LOSES! Invalid move None!
+[2025-02-17 21:46:18.769753] WRITE: blue
+[2025-02-17 21:46:18.770204] WRITE: orange
+[2025-02-17 21:46:18.809936] READ: h2 a1 r0
+[2025-02-17 21:46:18.811139] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 21:46:18.811778] WRITE: END: orange WINS! blue LOSES! Invalid move h2 a1 r0!
+[2025-02-17 21:46:34.621967] WRITE: blue
+[2025-02-17 21:46:34.622388] WRITE: orange
+[2025-02-17 21:46:34.664692] READ: h1 a1 r0
+[2025-02-17 21:46:34.665462] WRITE: h1 a1 r0
+[2025-02-17 21:46:35.016274] READ: h2 a4 r0
+[2025-02-17 21:46:35.017433] WRITE: h2 a4 r0
+[2025-02-17 21:46:35.470677] READ: a1 d1 r0
+[2025-02-17 21:46:35.471577] WRITE: a1 d1 r0
+[2025-02-17 21:46:35.957306] READ: a4 a1 r0
+[2025-02-17 21:46:35.958102] WRITE: a4 a1 r0
+[2025-02-17 21:46:36.040035] READ: h1 a4 r0
+[2025-02-17 21:46:36.041108] WRITE: h1 a4 r0
+[2025-02-17 21:46:36.391235] READ: h2 a7 r0
+[2025-02-17 21:46:36.392113] WRITE: h2 a7 r0
+[2025-02-17 21:46:36.684881] READ: h1 d7 r0
+[2025-02-17 21:46:36.685776] WRITE: h1 d7 r0
+[2025-02-17 21:46:37.008980] READ: h2 b2 r0
+[2025-02-17 21:46:37.010115] WRITE: h2 b2 r0
+[2025-02-17 21:46:37.506939] READ: d1 d2 r0
+[2025-02-17 21:46:37.507676] WRITE: d1 d2 r0
+[2025-02-17 21:46:37.891429] READ: a1 d1 r0
+[2025-02-17 21:46:37.892526] WRITE: a1 d1 r0
+[2025-02-17 21:46:38.425777] READ: a4 a1 r0
+[2025-02-17 21:46:38.426918] WRITE: a4 a1 r0
+[2025-02-17 21:46:38.844462] READ: a7 a4 r0
+[2025-02-17 21:46:38.845648] WRITE: a7 a4 r0
+[2025-02-17 21:46:39.358331] READ: d2 d3 r0
+[2025-02-17 21:46:39.359477] WRITE: d2 d3 r0
+[2025-02-17 21:46:39.881324] READ: a4 a7 r0
+[2025-02-17 21:46:39.882497] WRITE: a4 a7 r0
+[2025-02-17 21:46:40.418640] READ: a1 a4 r0
+[2025-02-17 21:46:40.419295] WRITE: a1 a4 r0
+[2025-02-17 21:46:40.894897] READ: b2 b4 r0
+[2025-02-17 21:46:40.895828] WRITE: b2 b4 r0
+[2025-02-17 21:46:41.432736] READ: a4 a1 r0
+[2025-02-17 21:46:41.433876] WRITE: a4 a1 r0
+[2025-02-17 21:46:41.984884] READ: a7 a4 r0
+[2025-02-17 21:46:41.985818] WRITE: a7 a4 r0
+[2025-02-17 21:46:42.166672] READ: h1 c4 r0
+[2025-02-17 21:46:42.167490] WRITE: h1 c4 r0
+[2025-02-17 21:46:42.194969] READ: h2 a7 r0
+[2025-02-17 21:46:42.196047] WRITE: h2 a7 r0
+[2025-02-17 21:46:42.197078] READ: stalemate
+[2025-02-17 21:46:42.198078] WRITE: END: orange WINS! blue LOSES! Invalid move stalemate!
+[2025-02-17 21:47:33.767902] WRITE: blue
+[2025-02-17 21:47:33.768335] WRITE: orange
+[2025-02-17 21:47:33.812170] READ: h1 a1 r0
+[2025-02-17 21:47:33.813036] WRITE: h1 a1 r0
+[2025-02-17 21:47:34.167423] READ: h2 a4 r0
+[2025-02-17 21:47:34.168402] WRITE: h2 a4 r0
+[2025-02-17 21:47:34.604638] READ: a1 d1 r0
+[2025-02-17 21:47:34.605604] WRITE: a1 d1 r0
+[2025-02-17 21:47:35.104322] READ: a4 a1 r0
+[2025-02-17 21:47:35.105395] WRITE: a4 a1 r0
+[2025-02-17 21:47:35.185795] READ: h1 a4 r0
+[2025-02-17 21:47:35.186871] WRITE: h1 a4 r0
+[2025-02-17 21:47:35.551790] READ: h2 a7 r0
+[2025-02-17 21:47:35.553007] WRITE: h2 a7 r0
+[2025-02-17 21:47:35.840816] READ: h1 d7 r0
+[2025-02-17 21:47:35.841820] WRITE: h1 d7 r0
+[2025-02-17 21:47:36.177450] READ: h2 b2 r0
+[2025-02-17 21:47:36.178406] WRITE: h2 b2 r0
+[2025-02-17 21:47:36.641901] READ: d1 d2 r0
+[2025-02-17 21:47:36.642836] WRITE: d1 d2 r0
+[2025-02-17 21:47:37.045516] READ: a1 d1 r0
+[2025-02-17 21:47:37.046562] WRITE: a1 d1 r0
+[2025-02-17 21:47:37.569021] READ: a4 a1 r0
+[2025-02-17 21:47:37.570122] WRITE: a4 a1 r0
+[2025-02-17 21:47:37.993984] READ: a7 a4 r0
+[2025-02-17 21:47:37.994939] WRITE: a7 a4 r0
+[2025-02-17 21:47:38.480622] READ: d2 d3 r0
+[2025-02-17 21:47:38.481499] WRITE: d2 d3 r0
+[2025-02-17 21:47:39.000544] READ: a4 a7 r0
+[2025-02-17 21:47:39.001519] WRITE: a4 a7 r0
+[2025-02-17 21:47:39.520238] READ: a1 a4 r0
+[2025-02-17 21:47:39.521359] WRITE: a1 a4 r0
+[2025-02-17 21:47:40.004677] READ: b2 b4 r0
+[2025-02-17 21:47:40.005606] WRITE: b2 b4 r0
+[2025-02-17 21:47:40.528033] READ: a4 a1 r0
+[2025-02-17 21:47:40.528953] WRITE: a4 a1 r0
+[2025-02-17 21:47:41.073865] READ: a7 a4 r0
+[2025-02-17 21:47:41.074777] WRITE: a7 a4 r0
+[2025-02-17 21:47:41.250930] READ: h1 c4 r0
+[2025-02-17 21:47:41.252193] WRITE: h1 c4 r0
+[2025-02-17 21:47:41.280292] READ: h2 a7 r0
+[2025-02-17 21:47:41.281234] WRITE: h2 a7 r0
+[2025-02-17 21:47:41.296260] READ: Traceback (most recent call last):
+[2025-02-17 21:47:41.297120] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 21:47:41.297613] WRITE: END: orange WINS! blue LOSES! Invalid move Traceback (most recent call last):!
+[2025-02-17 21:49:08.825558] WRITE: blue
+[2025-02-17 21:49:08.826088] WRITE: orange
+[2025-02-17 21:49:08.864793] READ: h1 a1 r0
+[2025-02-17 21:49:08.865632] WRITE: h1 a1 r0
+[2025-02-17 21:49:09.215829] READ: h2 a4 r0
+[2025-02-17 21:49:09.216752] WRITE: h2 a4 r0
+[2025-02-17 21:49:09.649504] READ: a1 d1 r0
+[2025-02-17 21:49:09.650474] WRITE: a1 d1 r0
+[2025-02-17 21:49:10.140693] READ: a4 a1 r0
+[2025-02-17 21:49:10.141620] WRITE: a4 a1 r0
+[2025-02-17 21:49:10.218759] READ: h1 a4 r0
+[2025-02-17 21:49:10.219744] WRITE: h1 a4 r0
+[2025-02-17 21:49:10.569964] READ: h2 a7 r0
+[2025-02-17 21:49:10.571086] WRITE: h2 a7 r0
+[2025-02-17 21:49:10.849170] READ: h1 d7 r0
+[2025-02-17 21:49:10.850126] WRITE: h1 d7 r0
+[2025-02-17 21:49:11.176629] READ: h2 b2 r0
+[2025-02-17 21:49:11.177321] WRITE: h2 b2 r0
+[2025-02-17 21:49:11.638512] READ: d1 d2 r0
+[2025-02-17 21:49:11.639480] WRITE: d1 d2 r0
+[2025-02-17 21:49:12.086448] READ: a1 d1 r0
+[2025-02-17 21:49:12.087890] WRITE: a1 d1 r0
+[2025-02-17 21:49:12.604445] READ: a4 a1 r0
+[2025-02-17 21:49:12.605325] WRITE: a4 a1 r0
+[2025-02-17 21:49:13.095389] READ: a7 a4 r0
+[2025-02-17 21:49:13.096236] WRITE: a7 a4 r0
+[2025-02-17 21:49:13.576806] READ: d2 d3 r0
+[2025-02-17 21:49:13.577570] WRITE: d2 d3 r0
+[2025-02-17 21:49:14.087714] READ: a4 a7 r0
+[2025-02-17 21:49:14.088613] WRITE: a4 a7 r0
+[2025-02-17 21:49:14.603955] READ: a1 a4 r0
+[2025-02-17 21:49:14.604788] WRITE: a1 a4 r0
+[2025-02-17 21:49:15.084465] READ: b2 b4 r0
+[2025-02-17 21:49:15.085360] WRITE: b2 b4 r0
+[2025-02-17 21:49:15.577361] READ: a4 a1 r0
+[2025-02-17 21:49:15.578172] WRITE: a4 a1 r0
+[2025-02-17 21:49:16.512527] READ: a7 a4 r0
+[2025-02-17 21:49:16.513681] WRITE: a7 a4 r0
+[2025-02-17 21:49:16.818232] READ: h1 c4 r0
+[2025-02-17 21:49:16.819424] WRITE: h1 c4 r0
+[2025-02-17 21:49:16.864361] READ: h2 a7 r0
+[2025-02-17 21:49:16.865491] WRITE: h2 a7 r0
+[2025-02-17 21:49:16.913089] READ: 
+[2025-02-17 21:50:02.523698] WRITE: blue
+[2025-02-17 21:50:02.524470] WRITE: orange
+[2025-02-17 21:50:02.569499] READ: h1 a1 r0
+[2025-02-17 21:50:02.570460] WRITE: h1 a1 r0
+[2025-02-17 21:50:02.921599] READ: h2 a4 r0
+[2025-02-17 21:50:02.922512] WRITE: h2 a4 r0
+[2025-02-17 21:50:03.360675] READ: a1 d1 r0
+[2025-02-17 21:50:03.361406] WRITE: a1 d1 r0
+[2025-02-17 21:50:03.852062] READ: a4 a1 r0
+[2025-02-17 21:50:03.852761] WRITE: a4 a1 r0
+[2025-02-17 21:50:03.932553] READ: h1 a4 r0
+[2025-02-17 21:50:03.933437] WRITE: h1 a4 r0
+[2025-02-17 21:50:04.293150] READ: h2 a7 r0
+[2025-02-17 21:50:04.293978] WRITE: h2 a7 r0
+[2025-02-17 21:50:04.579691] READ: h1 d7 r0
+[2025-02-17 21:50:04.580679] WRITE: h1 d7 r0
+[2025-02-17 21:50:04.908497] READ: h2 b2 r0
+[2025-02-17 21:50:04.909439] WRITE: h2 b2 r0
+[2025-02-17 21:50:05.381723] READ: d1 d2 r0
+[2025-02-17 21:50:05.382421] WRITE: d1 d2 r0
+[2025-02-17 21:50:05.772524] READ: a1 d1 r0
+[2025-02-17 21:50:05.773446] WRITE: a1 d1 r0
+[2025-02-17 21:50:06.299105] READ: a4 a1 r0
+[2025-02-17 21:50:06.299803] WRITE: a4 a1 r0
+[2025-02-17 21:50:06.717777] READ: a7 a4 r0
+[2025-02-17 21:50:06.718655] WRITE: a7 a4 r0
+[2025-02-17 21:50:07.209031] READ: d2 d3 r0
+[2025-02-17 21:50:07.210063] WRITE: d2 d3 r0
+[2025-02-17 21:50:07.723016] READ: a4 a7 r0
+[2025-02-17 21:50:07.723935] WRITE: a4 a7 r0
+[2025-02-17 21:50:08.256278] READ: a1 a4 r0
+[2025-02-17 21:50:08.257239] WRITE: a1 a4 r0
+[2025-02-17 21:50:08.734596] READ: b2 b4 r0
+[2025-02-17 21:50:08.735473] WRITE: b2 b4 r0
+[2025-02-17 21:50:09.264902] READ: a4 a1 r0
+[2025-02-17 21:50:09.265794] WRITE: a4 a1 r0
+[2025-02-17 21:50:09.807919] READ: a7 a4 r0
+[2025-02-17 21:50:09.808766] WRITE: a7 a4 r0
+[2025-02-17 21:50:09.986279] READ: h1 c4 r0
+[2025-02-17 21:50:09.987187] WRITE: h1 c4 r0
+[2025-02-17 21:50:10.014270] READ: h2 a7 r0
+[2025-02-17 21:50:10.015351] WRITE: h2 a7 r0
+[2025-02-17 21:50:10.039850] READ: 
+[2025-02-17 21:50:10.040664] WRITE: END: orange WINS! blue LOSES! Invalid move !
+[2025-02-17 21:50:37.583648] WRITE: blue
+[2025-02-17 21:50:37.584260] WRITE: orange
+[2025-02-17 21:50:37.622389] READ: h1 a1 r0
+[2025-02-17 21:50:37.623339] WRITE: h1 a1 r0
+[2025-02-17 21:50:37.968836] READ: h2 a4 r0
+[2025-02-17 21:50:37.969803] WRITE: h2 a4 r0
+[2025-02-17 21:50:38.404703] READ: a1 d1 r0
+[2025-02-17 21:50:38.405780] WRITE: a1 d1 r0
+[2025-02-17 21:50:38.886326] READ: a4 a1 r0
+[2025-02-17 21:50:38.887207] WRITE: a4 a1 r0
+[2025-02-17 21:50:38.966275] READ: h1 a4 r0
+[2025-02-17 21:50:38.967191] WRITE: h1 a4 r0
+[2025-02-17 21:50:39.316943] READ: h2 a7 r0
+[2025-02-17 21:50:39.317733] WRITE: h2 a7 r0
+[2025-02-17 21:50:39.596091] READ: h1 d7 r0
+[2025-02-17 21:50:39.597100] WRITE: h1 d7 r0
+[2025-02-17 21:50:39.917416] READ: h2 b2 r0
+[2025-02-17 21:50:39.918589] WRITE: h2 b2 r0
+[2025-02-17 21:50:40.374672] READ: d1 d2 r0
+[2025-02-17 21:50:40.375574] WRITE: d1 d2 r0
+[2025-02-17 21:50:40.760229] READ: a1 d1 r0
+[2025-02-17 21:50:40.761156] WRITE: a1 d1 r0
+[2025-02-17 21:50:41.272932] READ: a4 a1 r0
+[2025-02-17 21:50:41.273888] WRITE: a4 a1 r0
+[2025-02-17 21:50:41.685916] READ: a7 a4 r0
+[2025-02-17 21:50:41.686897] WRITE: a7 a4 r0
+[2025-02-17 21:50:42.169570] READ: d2 d3 r0
+[2025-02-17 21:50:42.170408] WRITE: d2 d3 r0
+[2025-02-17 21:50:42.678072] READ: a4 a7 r0
+[2025-02-17 21:50:42.678740] WRITE: a4 a7 r0
+[2025-02-17 21:50:43.196940] READ: a1 a4 r0
+[2025-02-17 21:50:43.197820] WRITE: a1 a4 r0
+[2025-02-17 21:50:43.671313] READ: b2 b4 r0
+[2025-02-17 21:50:43.672265] WRITE: b2 b4 r0
+[2025-02-17 21:50:44.188161] READ: a4 a1 r0
+[2025-02-17 21:50:44.189124] WRITE: a4 a1 r0
+[2025-02-17 21:50:44.724766] READ: a7 a4 r0
+[2025-02-17 21:50:44.725811] WRITE: a7 a4 r0
+[2025-02-17 21:50:44.900132] READ: h1 c4 r0
+[2025-02-17 21:50:44.901030] WRITE: h1 c4 r0
+[2025-02-17 21:50:44.927346] READ: h2 a7 r0
+[2025-02-17 21:50:44.928239] WRITE: h2 a7 r0
+[2025-02-17 21:50:44.952999] READ: 
+[2025-02-17 21:52:10.488309] WRITE: blue
+[2025-02-17 21:52:10.488743] WRITE: orange
+[2025-02-17 21:52:10.530503] READ: h1 a1 r0
+[2025-02-17 21:52:10.531552] WRITE: h1 a1 r0
+[2025-02-17 21:52:10.898927] READ: h2 a4 r0
+[2025-02-17 21:52:10.899951] WRITE: h2 a4 r0
+[2025-02-17 21:52:11.342033] READ: a1 d1 r0
+[2025-02-17 21:52:11.342938] WRITE: a1 d1 r0
+[2025-02-17 21:52:11.895551] READ: a4 a1 r0
+[2025-02-17 21:52:11.896385] WRITE: a4 a1 r0
+[2025-02-17 21:52:11.976136] READ: h1 a4 r0
+[2025-02-17 21:52:11.976932] WRITE: h1 a4 r0
+[2025-02-17 21:52:12.359661] READ: h2 a7 r0
+[2025-02-17 21:52:12.360867] WRITE: h2 a7 r0
+[2025-02-17 21:52:12.658379] READ: h1 d7 r0
+[2025-02-17 21:52:12.659358] WRITE: h1 d7 r0
+[2025-02-17 21:52:13.033469] READ: h2 b2 r0
+[2025-02-17 21:52:13.034536] WRITE: h2 b2 r0
+[2025-02-17 21:52:13.539204] READ: d1 d2 r0
+[2025-02-17 21:52:13.539917] WRITE: d1 d2 r0
+[2025-02-17 21:52:13.948608] READ: a1 d1 r0
+[2025-02-17 21:52:13.949538] WRITE: a1 d1 r0
+[2025-02-17 21:52:14.483123] READ: a4 a1 r0
+[2025-02-17 21:52:14.483872] WRITE: a4 a1 r0
+[2025-02-17 21:52:14.934802] READ: a7 a4 r0
+[2025-02-17 21:52:14.935411] WRITE: a7 a4 r0
+[2025-02-17 21:52:15.432342] READ: d2 d3 r0
+[2025-02-17 21:52:15.433340] WRITE: d2 d3 r0
+[2025-02-17 21:52:16.398157] READ: a4 a7 r0
+[2025-02-17 21:52:16.399619] WRITE: a4 a7 r0
+[2025-02-17 21:52:17.421156] READ: a1 a4 r0
+[2025-02-17 21:52:17.422397] WRITE: a1 a4 r0
+[2025-02-17 21:52:18.017631] READ: b2 b4 r0
+[2025-02-17 21:52:18.018580] WRITE: b2 b4 r0
+[2025-02-17 21:52:18.582330] READ: a4 a1 r0
+[2025-02-17 21:52:18.583353] WRITE: a4 a1 r0
+[2025-02-17 21:52:19.160266] READ: a7 a4 r0
+[2025-02-17 21:52:19.161127] WRITE: a7 a4 r0
+[2025-02-17 21:52:19.341572] READ: h1 c4 r0
+[2025-02-17 21:52:19.342243] WRITE: h1 c4 r0
+[2025-02-17 21:52:19.370336] READ: h2 a7 r0
+[2025-02-17 21:52:19.371117] WRITE: h2 a7 r0
+[2025-02-17 21:52:19.395925] READ: 
+[2025-02-17 21:52:54.157240] WRITE: blue
+[2025-02-17 21:52:54.157830] WRITE: orange
+[2025-02-17 21:52:59.160759] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:52:59.161337] WRITE: END: orange WINS! blue LOSES! Time out!
+[2025-02-17 21:53:06.278734] READ: h1 a1 r0
+[2025-02-17 21:53:18.814439] WRITE: blue
+[2025-02-17 21:53:18.814821] WRITE: orange
+[2025-02-17 21:53:18.856455] READ: h1 a1 r0
+[2025-02-17 21:53:18.857218] WRITE: h1 a1 r0
+[2025-02-17 21:53:19.213243] READ: h2 a4 r0
+[2025-02-17 21:53:19.214129] WRITE: h2 a4 r0
+[2025-02-17 21:53:19.670874] READ: a1 d1 r0
+[2025-02-17 21:53:19.671773] WRITE: a1 d1 r0
+[2025-02-17 21:53:20.186894] READ: a4 a1 r0
+[2025-02-17 21:53:20.188118] WRITE: a4 a1 r0
+[2025-02-17 21:53:20.272601] READ: h1 a4 r0
+[2025-02-17 21:53:20.273468] WRITE: h1 a4 r0
+[2025-02-17 21:53:20.637144] READ: h2 a7 r0
+[2025-02-17 21:53:20.637848] WRITE: h2 a7 r0
+[2025-02-17 21:53:20.939655] READ: h1 d7 r0
+[2025-02-17 21:53:20.940340] WRITE: h1 d7 r0
+[2025-02-17 21:53:21.276812] READ: h2 b2 r0
+[2025-02-17 21:53:21.277628] WRITE: h2 b2 r0
+[2025-02-17 21:53:21.769162] READ: d1 d2 r0
+[2025-02-17 21:53:21.769976] WRITE: d1 d2 r0
+[2025-02-17 21:53:22.158590] READ: a1 d1 r0
+[2025-02-17 21:53:22.159402] WRITE: a1 d1 r0
+[2025-02-17 21:53:22.680450] READ: a4 a1 r0
+[2025-02-17 21:53:22.681332] WRITE: a4 a1 r0
+[2025-02-17 21:53:23.096852] READ: a7 a4 r0
+[2025-02-17 21:53:23.097636] WRITE: a7 a4 r0
+[2025-02-17 21:53:23.584315] READ: d2 d3 r0
+[2025-02-17 21:53:23.585174] WRITE: d2 d3 r0
+[2025-02-17 21:53:24.092996] READ: a4 a7 r0
+[2025-02-17 21:53:24.093841] WRITE: a4 a7 r0
+[2025-02-17 21:53:24.616285] READ: a1 a4 r0
+[2025-02-17 21:53:24.617109] WRITE: a1 a4 r0
+[2025-02-17 21:53:25.095358] READ: b2 b4 r0
+[2025-02-17 21:53:25.096276] WRITE: b2 b4 r0
+[2025-02-17 21:53:25.624472] READ: a4 a1 r0
+[2025-02-17 21:53:25.625271] WRITE: a4 a1 r0
+[2025-02-17 21:53:26.166159] READ: a7 a4 r0
+[2025-02-17 21:53:26.167203] WRITE: a7 a4 r0
+[2025-02-17 21:53:26.343945] READ: h1 c4 r0
+[2025-02-17 21:53:26.344916] WRITE: h1 c4 r0
+[2025-02-17 21:53:26.371522] READ: h2 a7 r0
+[2025-02-17 21:53:26.372425] WRITE: h2 a7 r0
+[2025-02-17 21:53:26.397110] READ: 
+[2025-02-17 21:53:26.397914] WRITE: END: orange WINS! blue LOSES! Invalid move !
+[2025-02-17 21:54:52.605791] WRITE: blue
+[2025-02-17 21:54:52.606657] WRITE: orange
+[2025-02-17 21:54:52.652831] READ: h1 a1 r0
+[2025-02-17 21:54:52.653956] WRITE: h1 a1 r0
+[2025-02-17 21:54:53.007017] READ: h2 a4 r0
+[2025-02-17 21:54:53.007978] WRITE: h2 a4 r0
+[2025-02-17 21:54:53.442750] READ: a1 d1 r0
+[2025-02-17 21:54:53.443624] WRITE: a1 d1 r0
+[2025-02-17 21:54:53.937758] READ: a4 a1 r0
+[2025-02-17 21:54:53.938619] WRITE: a4 a1 r0
+[2025-02-17 21:54:54.017816] READ: h1 a4 r0
+[2025-02-17 21:54:54.018631] WRITE: h1 a4 r0
+[2025-02-17 21:54:54.371725] READ: h2 a7 r0
+[2025-02-17 21:54:54.372461] WRITE: h2 a7 r0
+[2025-02-17 21:54:54.652918] READ: h1 d7 r0
+[2025-02-17 21:54:54.653942] WRITE: h1 d7 r0
+[2025-02-17 21:54:54.982286] READ: h2 b2 r0
+[2025-02-17 21:54:54.983034] WRITE: h2 b2 r0
+[2025-02-17 21:54:55.448500] READ: d1 d2 r0
+[2025-02-17 21:54:55.449304] WRITE: d1 d2 r0
+[2025-02-17 21:54:55.858114] READ: a1 d1 r0
+[2025-02-17 21:54:55.858814] WRITE: a1 d1 r0
+[2025-02-17 21:54:56.400974] READ: a4 a1 r0
+[2025-02-17 21:54:56.401867] WRITE: a4 a1 r0
+[2025-02-17 21:54:56.823437] READ: a7 a4 r0
+[2025-02-17 21:54:56.824418] WRITE: a7 a4 r0
+[2025-02-17 21:54:57.313898] READ: d2 d3 r0
+[2025-02-17 21:54:57.314818] WRITE: d2 d3 r0
+[2025-02-17 21:54:57.833612] READ: a4 a7 r0
+[2025-02-17 21:54:57.834684] WRITE: a4 a7 r0
+[2025-02-17 21:54:58.355069] READ: a1 a4 r0
+[2025-02-17 21:54:58.355938] WRITE: a1 a4 r0
+[2025-02-17 21:54:58.835212] READ: b2 b4 r0
+[2025-02-17 21:54:58.835977] WRITE: b2 b4 r0
+[2025-02-17 21:54:59.362900] READ: a4 a1 r0
+[2025-02-17 21:54:59.363864] WRITE: a4 a1 r0
+[2025-02-17 21:54:59.958648] READ: a7 a4 r0
+[2025-02-17 21:54:59.959443] WRITE: a7 a4 r0
+[2025-02-17 21:55:00.139105] READ: h1 c4 r0
+[2025-02-17 21:55:00.139857] WRITE: h1 c4 r0
+[2025-02-17 21:55:00.475514] READ: h2 a7 r0
+[2025-02-17 21:55:00.476446] WRITE: h2 a7 r0
+[2025-02-17 21:55:00.914626] READ: d3 c3 r0
+[2025-02-17 21:55:00.915643] WRITE: d3 c3 r0
+[2025-02-17 21:55:01.018968] READ: h2 c5 r0
+[2025-02-17 21:55:01.019959] WRITE: h2 c5 r0
+[2025-02-17 21:55:01.272888] READ: h1 b2 r0
+[2025-02-17 21:55:01.273759] WRITE: h1 b2 r0
+[2025-02-17 21:55:01.566332] READ: b4 b6 r0
+[2025-02-17 21:55:01.567216] WRITE: b4 b6 r0
+[2025-02-17 21:55:01.921743] READ: b2 b4 r0
+[2025-02-17 21:55:01.922717] WRITE: b2 b4 r0
+[2025-02-17 21:55:02.212753] READ: b6 d6 r0
+[2025-02-17 21:55:02.213754] WRITE: b6 d6 r0
+[2025-02-17 21:55:02.524828] READ: b4 b2 r0
+[2025-02-17 21:55:02.525708] WRITE: b4 b2 r0
+[2025-02-17 21:55:02.887693] READ: a4 b4 r0
+[2025-02-17 21:55:02.888661] WRITE: a4 b4 r0
+[2025-02-17 21:55:03.202131] READ: a1 a4 r0
+[2025-02-17 21:55:03.202926] WRITE: a1 a4 r0
+[2025-02-17 21:55:03.573235] READ: d1 a1 r0
+[2025-02-17 21:55:03.574067] WRITE: d1 a1 r0
+[2025-02-17 21:55:03.574658] WRITE: Draw!
+[2025-02-17 21:55:03.574978] WRITE: Draw!
