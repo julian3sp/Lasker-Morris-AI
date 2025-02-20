@@ -16,13 +16,12 @@ This project implements an AI capable of playing Lasker-Morris using the Minimax
 1. Clone the repository:
    ```bash
    git clone <repository_url>
-   cd minimax_game_project
+   cd Lasker-Morris-AI
    ```
 2. Run the program:
    ```bash
-   python3 minimax_game.py <input_file>
+   python Lebron.py 
    ```
-   - `<input_file>` should contain the initial game state in a specified format.
 
 **🧠 How It Works:**
 - **Initialization**: The AI loads the game state from the provided input file.
