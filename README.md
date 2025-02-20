@@ -1,5 +1,5 @@
 
-# **Lasker-Morris AI with Minimax, Alpha-Beta Pruning, and Local Beam Search: Project Overview**
+# **Lasker-Morris AI with Minimax, Alpha-Beta Pruning, and Local Beam Search**
 
 **📋 Project Overview:**  
 This project implements an AI capable of playing Lasker-Morris using the Minimax algorithm enhanced with Alpha-Beta pruning for efficient decision-making. Additionally, the AI integrates **local beam search** to improve move selection by exploring multiple states simultaneously, focusing on the top candidates at each depth. The AI evaluates possible moves using a heuristic evaluation function and optimizes search with a priority queue.
