@@ -4,8 +4,8 @@ import math
 import time
 import heapq
 stalemate_threshold = 20
-N = 3
-MAX_DEPTH = 7
+N = 5
+MAX_DEPTH = 5
 
 
 def minimax(game, a, b, depth):
@@ -22,8 +22,8 @@ def max_value(game, a, b, depth):
     priority_queue = []
     # for each possible action in this game state
     for action in actions(game):
-        # get the heuristic value for executing that action
-        score = heuristic(simulate_move(game, action))
+        # get the evaluation value for executing that action
+        score = evaluation(simulate_move(game, action))
         # push score onto priority queue, but in this case, with a negative score value so that the moves with the highest values are popped off
         heapq.heappush(priority_queue, (-score, action))
     # pick the top N moves from the priority queue
@@ -51,8 +51,8 @@ def min_value(game, a, b, depth):
     priority_queue = []
     # for each possible action in this game state
     for action in actions(game):
-        # get the heuristic value for executing that action
-        score = heuristic(simulate_move(game, action))
+        # get the evaluation value for executing that action
+        score = evaluation(simulate_move(game, action))
         # push score onto priority queue
         heapq.heappush(priority_queue, (score, action))
     # pick the top N moves from this priority queue
@@ -73,7 +73,7 @@ def min_value(game, a, b, depth):
     return v, move
 
 
-def heuristic(game):
+def evaluation(game):
     current_turn = game["turn"]
     opponent_turn = "orange" if current_turn == "blue" else "blue"
 
@@ -91,14 +91,14 @@ def heuristic(game):
     opponent_control = sum(1 for pos in game["board"] if game["board"][pos] == opponent_turn)
     control_diff = current_control - opponent_control
 
-    # combine all heuristics to form a final heuristic value
-    heuristic_value = (
+    # combine all evaluations to form a final evaluation value
+    evaluation_value = (
             10 * stone_count_diff  # Stone count is important, but not as much as mills
             + 50 * mills_diff  # Mills are the most important as they are what help you win
             + 5 * control_diff  # Board control matters, but less than mills and less than stone count
     )
 
-    return heuristic_value
+    return evaluation_value
 
 
 def switch_turn(game):
@@ -394,7 +394,7 @@ def utility(game):
             return -100
 
     # Evaluate based on stone count difference if max depth is reached
-    return heuristic(game)
+    return evaluation(game)
 
 
 def main():
@@ -471,7 +471,6 @@ def main():
                 if elapsed_time > 5:
                     print("Time limit exceeded")
                     sys.exit(0)
-                    # check if move is valid
 
                 player_turn = False
 
