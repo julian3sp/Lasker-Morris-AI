@@ -1,6 +1,3 @@
-Certainly! Here's the updated version with the inclusion of the **local beam search**:
-
----
 
 **Lasker-Morris AI with Minimax, Alpha-Beta Pruning, and Local Beam Search: Project Overview**
 
